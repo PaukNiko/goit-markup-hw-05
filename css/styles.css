@@ -32,6 +32,10 @@ a {
   color: #2e2f42;
 }
 
+.contacts {
+  font-style: normal;
+}
+
 .nav-link {
   font-family: "Roboto";
   font-weight: 500;
@@ -106,6 +110,15 @@ a {
   color: #2e2f42;
 }
 
+.advantage-title-item {
+  font-family: "Roboto", sans-serif;
+font-weight: 500;
+font-size: 20px;
+line-height: 1.2;
+letter-spacing: 0.02em;
+color: #2e2f42;
+}
+
 .advantage-text {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -159,9 +172,20 @@ color: #434455;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 36px;
-  line-height: 40px;
+  line-height: 1.11;
   letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #2e2f42;
   text-align: center;
+}
+
+.portfolio-subtitle {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
 }
 
 .advantages-title {
@@ -180,6 +204,8 @@ color: #434455;
   letter-spacing: 0.02em;
   color: #434455;
 }
+
+
 
 .page-footer {
   background-color: #2e2f42;
