@@ -6,6 +6,18 @@ body {
   font-weight: 400, 500, 700;
   color: #434455;
   background-color: #ffffff;
+  margin: 0;
+}
+
+.h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
 }
 
 ul,
@@ -17,7 +29,26 @@ a {
   text-decoration: none;
 }
 
+.page-header {
+  padding: 24px 0px;
+}
+
+.page-header .header-container {
+  display: flex;
+  align-items: center;
+}
+
+.nav-list {
+  display: flex;
+}
+
+.contacts-list {
+  display: flex;
+}
+
 .logo {
+  display: flex;
+  align-items: center;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-style: Bold;
@@ -52,6 +83,7 @@ a {
 .nav-link:focus {
   color: #404bbf;
 }
+
 .contacts-link {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -70,8 +102,18 @@ a {
 }
 
 .hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #2e2f42;
 }
+
+.hero-container {
+  max-width: 1440px;
+  width: 100%;
+  height: 600px;
+}
+
 .hero-title {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
@@ -81,9 +123,12 @@ a {
   letter-spacing: 0.02em;
   text-align: center;
   color: #ffffff;
+  padding: 188px 472px 292px 472px;
 }
 
 .hero-button {
+  display: flex;
+  align-items: center;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   background-color: #4d5ae5;
@@ -92,6 +137,15 @@ a {
   cursor: pointer;
   border: none;
   color: #ffffff;
+  width: 169px;
+  padding-top: 16px;
+  padding-right: 32px;
+  padding-bottom: 16px;
+  padding-left: 32px;
+  gap: 10px;
+  border-radius: 4px;
+
+  flex-direction: row;
 }
 
 .hero-button:hover {
@@ -101,7 +155,18 @@ a {
   background-color: #404bbf;
 }
 
-.advantages-title {
+.advantages-title,
+.visually-hidden .visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 20px;
@@ -110,13 +175,21 @@ a {
   color: #2e2f42;
 }
 
+.advantages-list {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+  flex-direction: row;
+  margin: 120px 156px 120px 156px;
+}
+
 .advantage-title-item {
   font-family: "Roboto", sans-serif;
-font-weight: 500;
-font-size: 20px;
-line-height: 1.2;
-letter-spacing: 0.02em;
-color: #2e2f42;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
 }
 
 .advantage-text {
@@ -128,7 +201,7 @@ color: #2e2f42;
   letter-spacing: 2%;
 }
 
-.team{
+.team {
   background-color: #f4f4fd;
 }
 
@@ -142,6 +215,8 @@ color: #2e2f42;
   text-transform: capitalize;
   text-align: center;
   color: #2e2f42;
+  padding: 0px 0px 40px 0px;
+  margin: 120px 0px 120px 0px;
 }
 .team-name {
   font-family: "Roboto", sans-serif;
@@ -152,6 +227,7 @@ color: #2e2f42;
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
+  gap: 8px;
 }
 .team-role {
   font-family: "Roboto", sans-serif;
@@ -161,11 +237,30 @@ color: #2e2f42;
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-align: center;
-color: #434455;
+  color: #434455;
+  align-items: center;
+  gap: 8px;
+}
+
+.team-list {
+  display: flex;
+  gap: 24px;
+  padding: 0px 123px 80px 123px;
+  justify-content: center;
+  flex-direction: row;
 }
 
 .team-item {
-  background-color: #FFFFFF
+  background-color: #ffffff;
+  border-radius: 4px;
+  text-shadow: 0px 2px 1px 0px #2e2f4214;
+  text-shadow: 0px 1px 1px 0px #2e2f4229;
+  text-shadow: 0px 1px 6px 0px #2e2f4214;
+  padding-bottom: 32px;
+}
+
+.team-container {
+  padding: 120px 156px 120px 156px;
 }
 
 .portfolio-title {
@@ -190,10 +285,20 @@ color: #434455;
 
 .portfolio-text {
   font-family: "Roboto", sans-serif;
-font-weight: 400;
-font-size: 16px;
-line-height: 1.5;
-letter-spacing: 0.02em;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.portfolio-list,
+.portfolio-title {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  flex-direction: row;
+  justify-content: center;
+  padding: 120px 156px 120px 156px;
 }
 
 .advantages-title {
@@ -213,8 +318,6 @@ letter-spacing: 0.02em;
   color: #434455;
 }
 
-
-
 .page-footer {
   background-color: #2e2f42;
 }
@@ -230,6 +333,7 @@ letter-spacing: 0.02em;
 .footer-logo-part {
   color: #f4f4fd;
 }
+
 .footer-text {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
