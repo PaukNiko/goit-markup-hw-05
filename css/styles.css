@@ -10,7 +10,7 @@ body {
 }
 
 .img {
-  display:inline;
+  display: block;
 }
 
 .h1,
@@ -67,6 +67,8 @@ header .header-nav {
 
 .contacts-list {
   display: flex;
+  padding: 0;
+  margin: 0;
   gap: 40px;
   align-items: center;
 }
@@ -182,7 +184,6 @@ header .header-nav {
   background-color: #404bbf;
 }
 
-
 .advantages {
   padding: 120px 0px;
 }
@@ -211,13 +212,6 @@ header .header-nav {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: #2e2f42;
-  padding: 120px 0px;
 }
 
 .advantages-list {
@@ -229,11 +223,11 @@ header .header-nav {
 }
 
 .advantages-list .advantage-item {
-  width: calc((100% - 72px) / 4);
+  flex-basis: calc((100% - 3 * 24px) / 4);
 }
 
 .advantage-title-item {
- margin-bottom: 8px;
+  margin-bottom: 8px;
 }
 
 .advantage-title-item {
@@ -269,7 +263,7 @@ header .header-nav {
   text-transform: capitalize;
   text-align: center;
   color: #2e2f42;
-  margin-bottom: 72px;
+  margin-bottom: 8px
 }
 
 .team-name {
@@ -293,27 +287,26 @@ header .header-nav {
   color: #434455;
 }
 
-
 .team-list {
   display: flex;
   gap: 24px;
   justify-content: center;
   flex-direction: row;
-
 }
 
 .team-list .team-item {
-  width: calc((100% - 72px) / 4);
+  flex-basis: calc((100% - 3 * 24px) / 4);
   border-radius: 0px 0px 4px 4px;
 }
 
-.container-name-designer,.container-name-frontend,.container-name-marketing,.container-name-ui {
+.container-name-designer,
+.container-name-frontend,
+.container-name-marketing,
+.container-name-ui {
   padding: 32px 0px;
- text-align: center;
+  text-align: center;
   margin-bottom: 8px;
 }
-
-
 
 .team-role {
   margin-bottom: 8px;
@@ -337,7 +330,6 @@ header .header-nav {
   padding-bottom: 120px;
 }
 
-
 .portfolio-title {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
@@ -357,6 +349,7 @@ header .header-nav {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 
 .portfolio-text {
@@ -379,8 +372,15 @@ header .header-nav {
 }
 
 .portfolio-list .portfolio-item {
-  width: calc((100% - 72px) / 4);
+  width: calc((100% - 72px) / 3) ;
 }
+
+.portfolio-container-inner {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+}
+
 
 .advantages-title {
   font-family: "Roboto", sans-serif;
