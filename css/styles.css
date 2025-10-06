@@ -68,7 +68,7 @@ header .header-nav {
 .contacts-list {
   display: flex;
   padding: 0;
-  margin: 0;
+  margin: 0px 0px 0px 332px;
   gap: 40px;
   align-items: center;
 }
@@ -135,10 +135,15 @@ header .header-nav {
   justify-content: center;
   align-items: center;
   background-color: #2e2f42;
-  padding: 188px 0px;
+  padding-top: 188px;
+  padding-bottom: 188px;
 }
 
 .hero-container {
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
   max-width: 1440px;
   width: 100%;
   height: 600px;
@@ -154,6 +159,7 @@ header .header-nav {
   text-align: center;
   color: #ffffff;
   max-width: 496px;
+  
 }
 
 .hero-button {
@@ -215,14 +221,15 @@ header .header-nav {
   gap: 24px;
   justify-content: center;
   flex-direction: row;
-  margin: 120px 156px 120px 156px;
+}
+
+
+.advantages-list .advantage-item {
+  flex-basis: calc((100% - 3 * 24px) / 4);
 }
 
 .advantages-list .advantage-item:first-child {
-  flex-basis: calc((100% - 3 * 24px) / 4);
-}
-.advantages-list .advantage-item {
-  flex-basis: calc((100% - 3 * 24px) / 4);
+  width: calc((100% - 72px) / 4);
 }
 
 .advantage-title-item {
@@ -236,10 +243,6 @@ header .header-nav {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
-}
-
-.advantages-list .advantage-item:first-child {
-  width: calc((100% - 72px) / 4);
 }
 
 
@@ -301,17 +304,13 @@ header .header-nav {
 
 .team-list .team-item:first-child {
   flex-basis: calc((100% - 3 * 24px) / 4);
+  /* width: calc((100% - 72px) / 4); */
   border-radius: 0px 0px 4px 4px;
 }
 
-
-.team-list .team-item:first-child {
-  flex-basis: calc((100% - 3 * 24px) / 4);
-}
-
-.team-list .team-item {
-  flex-basis: calc((100% - 3 * 24px) / 4);
-}
+/* .team-list .team-item {
+  width: calc((100% - 72px) / 4);
+} */
 
 .container-team-info {
   padding: 32px 0px;
@@ -371,14 +370,13 @@ header .header-nav {
   letter-spacing: 0.02em;
 }
 
-.portfolio-list,
-.portfolio-title {
+.portfolio-list {
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
   flex-direction: row;
   justify-content: center;
-  padding: 120px 156px 120px 156px;
+  /* padding: 120px 156px 120px 156px; */
   row-gap: 48px;
 }
 
@@ -396,22 +394,7 @@ header .header-nav {
   border-top: none;
 }
 
-.advantages-title {
-  font-family: "Roboto", sans-serif;
-  color: #2e2f42;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  text-transform: capitalize;
-}
-.advantage-text {
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #434455;
-}
+
 
 .page-footer {
   background-color: #2e2f42;
