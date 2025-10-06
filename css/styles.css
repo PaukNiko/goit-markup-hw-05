@@ -226,6 +226,7 @@ header .header-nav {
 
 .advantages-list .advantage-item {
   flex-basis: calc((100% - 3 * 24px) / 4);
+  box-sizing: border-box;
 }
 
 .advantages-list .advantage-item:first-child {
@@ -324,6 +325,7 @@ header .header-nav {
 
 .team-item {
   background-color: #ffffff;
+  box-sizing: border-box;
   border-radius: 4px;
   text-shadow: 0px 2px 1px 0px #2e2f4214;
   text-shadow: 0px 1px 1px 0px #2e2f4229;
@@ -374,26 +376,20 @@ header .header-nav {
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
-  flex-direction: row;
   justify-content: center;
-  /* padding: 120px 156px 120px 156px; */
-  row-gap: 48px;
-}
-
-.portfolio-list .portfolio-item:first-child {
-  width: calc((100% - 48px) / 3);
 }
 
 .portfolio-list .portfolio-item {
   width: calc((100% - 48px) / 3);
+  box-sizing: border-box;
 }
 
 .portfolio-container-inner {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
   border-top: none;
+  box-sizing: border-box;
 }
-
 
 
 .page-footer {
