@@ -324,7 +324,6 @@ header .header-nav {
   border-radius: 4px;
 }
 
-
 .portfolio {
   padding-top: 120px;
   padding-bottom: 120px;
@@ -381,6 +380,7 @@ header .header-nav {
 }
 
 .page-footer {
+  display: flex;
   background-color: #2e2f42;
   padding: 100px 0px;
 }
@@ -406,6 +406,7 @@ header .header-nav {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
+  width: 264px;
 }
 
 header,
