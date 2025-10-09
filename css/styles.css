@@ -33,6 +33,8 @@ a {
   text-decoration: none;
 }
 
+/* //Page Header // */
+
 .page-header {
   border-bottom: 1px solid #e7e9fc;
 }
@@ -66,7 +68,6 @@ header .header-nav {
 .contacts-list {
   display: flex;
   padding: 0;
-  margin: 0px 0px 0px 332px;
   gap: 40px;
   align-items: center;
 }
@@ -91,6 +92,7 @@ header .header-nav {
 
 .contacts {
   font-style: normal;
+    margin: 0px 0px 0px 332px;
 }
 
 .nav-link {
@@ -119,6 +121,7 @@ header .header-nav {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+   padding: 24px 0px;
 }
 
 .contacts-link:hover {
@@ -311,7 +314,6 @@ header .header-nav {
 .container-team-info {
   padding: 32px 0px;
   text-align: center;
-  margin-bottom: 8px;
 }
 
 .team-role {
