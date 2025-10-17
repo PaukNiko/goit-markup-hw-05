@@ -149,8 +149,9 @@ header .header-nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 1440px;
+  width: 1440px;
   width: 100%;
+    margin:0 auto;
   background-color: #2e2f42;
   padding-top: 188px;
   padding-bottom: 188px;
@@ -324,7 +325,7 @@ header .header-nav {
   letter-spacing: 0.02em;
   text-align: center;
   color: #434455;
-  margin: 8px;
+  padding: 8px;
 }
 
 .team-list {
