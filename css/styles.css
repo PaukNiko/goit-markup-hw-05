@@ -386,6 +386,8 @@ header .header-nav {
 }
 
 .social-icon {
+  width: 8px;
+  height: 8px;
   transform: scale(2);
   fill: var(--light-color, #f4f4fd);
 }
@@ -566,6 +568,7 @@ header .header-nav {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  margin-left: 80px;
 }
 
 .subscribe-title {
@@ -579,7 +582,6 @@ header .header-nav {
 
 .subscribe-form {
   display: flex;
-  gap: 24px;
 }
 
 .subscribe-label {
@@ -620,11 +622,16 @@ header .header-nav {
   background-color: #4d5ae5;
   border: none;
   border-radius: 4px;
+  margin-left: 24px;
+}
+
+.subscribe-btn:hover, .subscribe-btn:focus {
+  background-color: #404BBF;
 }
 
 .subscribe-icon {
-  margin-left: 16px;
-  margin-bottom: 8px;
+  fill: currentColor;
+margin: 10px 10px;
 }
 
 .backdrop {
@@ -638,7 +645,8 @@ header .header-nav {
   visibility: hidden;
   pointer-events: none;
   transition-delay: 300ms;
-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-open {
@@ -661,7 +669,7 @@ transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-b
   left: 50%;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-open .modal {
@@ -690,30 +698,26 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal-btn:hover {
-  background-color: #404bbf;
-  border: none;
-  fill: #ffffff;
-}
-.modal-btn:focus {
-  background-color: #404bbf;
-  border: none;
-  fill: #ffffff;
+  margin-bottom: 24px;
 }
 
 .modal-btn-icon {
+  fill: #2e2f42;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-btn-icon:hover .modal-btn-icon:focus {
+.modal-btn:hover,
+.modal-btn:focus {
+  background-color: #404bbf;
+}
+
+.modal-btn-icon:hover,
+.modal-btn-icon:focus {
   fill: #ffffff;
 }
 
 .modal-caption {
   font-family: "Roboto", sans-serif;
-  padding-top: 36px;
   font-weight: 500;
   font-style: Medium;
   font-size: 16px;
@@ -725,7 +729,7 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-form-field {
-margin-bottom: 8px;
+  margin-bottom: 8px;
 }
 
 .modal-form-label {
@@ -815,8 +819,6 @@ margin-bottom: 8px;
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  width: 16;
-  height: 16;
   margin-right: 8px;
   color: transparent;
   border-width: 1px;
@@ -888,10 +890,17 @@ input[type="checkbox"]:checked + .agreement-wrapper > .agreement-checkbox {
   line-height: 24px;
   letter-spacing: 0.04em;
   color: #ffffff;
+  box-shadow: 0px 4px 4px 0px #00000026;
   border-color: transparent;
   cursor: pointer;
   border: none;
+  margin: 0 auto;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-send-btn:hover,
+.modal-send-btn:focus {
+  background-color: #404bbf;
 }
 
 body:has(.backdrop.is-open) {
