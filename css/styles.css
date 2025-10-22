@@ -582,6 +582,7 @@ header .header-nav {
 
 .subscribe-form {
   display: flex;
+  gap: 24px;
 }
 
 .subscribe-label {
@@ -625,13 +626,14 @@ header .header-nav {
   margin-left: 24px;
 }
 
-.subscribe-btn:hover, .subscribe-btn:focus {
-  background-color: #404BBF;
+.subscribe-btn:hover,
+.subscribe-btn:focus {
+  background-color: #404bbf;
 }
 
 .subscribe-icon {
   fill: currentColor;
-margin: 10px 10px;
+  margin-left: 16px;
 }
 
 .backdrop {
@@ -709,6 +711,8 @@ margin: 10px 10px;
 .modal-btn:hover,
 .modal-btn:focus {
   background-color: #404bbf;
+  border: none;
+  fill: #ffffff;
 }
 
 .modal-btn-icon:hover,
