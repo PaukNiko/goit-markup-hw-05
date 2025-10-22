@@ -715,11 +715,6 @@ header .header-nav {
   fill: #ffffff;
 }
 
-.modal-btn-icon:hover,
-.modal-btn-icon:focus {
-  fill: #ffffff;
-}
-
 .modal-caption {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
